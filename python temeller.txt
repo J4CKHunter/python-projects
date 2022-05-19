@@ -1,0 +1,425 @@
+Python 3.7.4 (tags/v3.7.4:e09359112e, Jul  8 2019, 19:29:22) [MSC v.1916 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license()" for more information.
+>>> x=15
+>>> y=3
+>>> x
+15
+>>> y
+3
+>>> x+y
+18
+>>> x-y
+12
+>>> x*y
+45
+>>> x/y
+5.0
+>>> a
+Traceback (most recent call last):
+  File "<pyshell#8>", line 1, in <module>
+    a
+NameError: name 'a' is not defined
+>>> a=1
+>>> a
+1
+>>> a*(x+y)
+18
+>>> y/x
+0.2
+>>> fiyat=150
+>>> vergi=18/100
+>>> fiyat*vergi
+27.0
+>>> fiyat + _
+177.0
+>>> round(_)
+177
+>>> fiyat 155
+SyntaxError: invalid syntax
+>>> 
+>>> fiyat
+150
+>>> fiyat =155ü
+SyntaxError: invalid syntax
+>>> fiyat =155
+>>> fiyat
+155
+>>> fiyat*vergi
+27.9
+>>> fiyat + _
+182.9
+>>> round(_,1)
+182.9
+>>> round(_,2)
+182.9
+>>> round(_)
+183
+>>> s=15,653
+>>> s
+(15, 653)
+>>> s=15.653
+>>> s
+15.653
+>>> round(_)
+16
+>>> round(_,2)
+16
+>>> round(s,2)
+15.65
+>>> round(s,1)
+15.7
+>>> "merhaba dunya"
+'merhaba dunya'
+>>> 'merhaba dunya'
+'merhaba dunya'
+>>> x="erdem nayin"
+>>> x
+'erdem nayin'
+>>> print("x")
+x
+>>> print(x)
+erdem nayin
+>>> x=erdem
+Traceback (most recent call last):
+  File "<pyshell#43>", line 1, in <module>
+    x=erdem
+NameError: name 'erdem' is not defined
+>>> x="erdem"
+>>> x
+'erdem'
+>>> print(x)
+erdem
+>>> x="erdem"nayin"
+SyntaxError: invalid syntax
+>>> x="erdem\"nayin"
+>>> x
+'erdem"nayin'
+>>> print(x)
+erdem"nayin
+>>> y="kerem\nnayin"
+>>> y
+'kerem\nnayin'
+>>> print(y)
+kerem
+nayin
+>>> x+y
+'erdem"nayinkerem\nnayin'
+>>> print(x+y)
+erdem"nayinkerem
+nayin
+>>> a="erdem\nayin"
+>>> a
+'erdem\nayin'
+>>> print(a)
+erdem
+ayin
+>>> a="ali \ evi"
+>>> a
+'ali \\ evi'
+>>> print(a)
+ali \ evi
+>>> a="ali \\ evi"
+>>> a
+'ali \\ evi'
+>>> print(a)
+ali \ evi
+>>> 3*a
+'ali \\ eviali \\ eviali \\ evi'
+>>> 2*x
+'erdem"nayinerdem"nayin'
+>>> 2*x+a
+'erdem"nayinerdem"nayinali \\ evi'
+>>> a="erdem nayin"
+>>> a[2]
+'d'
+>>> a[-2]
+'i'
+>>> a[-1]
+'n'
+>>> x[2:6]
+'dem"'
+>>> x[2:10]
+'dem"nayi'
+>>> print(x[x:10])
+Traceback (most recent call last):
+  File "<pyshell#74>", line 1, in <module>
+    print(x[x:10])
+TypeError: slice indices must be integers or None or have an __index__ method
+>>> print(x[2:10])
+dem"nayi
+>>> x="erdem nayin"
+>>> x
+'erdem nayin'
+>>> print(x)
+erdem nayin
+>>> x[2:10]
+'dem nayi'
+>>> x(2:10)
+SyntaxError: invalid syntax
+>>> x[2:11]
+'dem nayin'
+>>> x[2:15]
+'dem nayin'
+>>> x[2:3]
+'d'
+>>> x[2:4]
+'de'
+>>> x[2:]
+'dem nayin'
+>>> x[4]
+'m'
+>>> x[4:]
+'m nayin'
+>>> x[:4]
+'erde'
+>>> x[0:4]
+'erde'
+>>> x[4:0]
+''
+>>> x[4:-1]
+'m nayi'
+>>> x[:5]+x[5:]
+'erdem nayin'
+>>> x[5:]
+' nayin'
+>>> x[2:7]+x[4:6]
+'dem nm '
+>>> len(x)
+11
+>>> x="erdem"
+>>> len(x)
+5
+>>> x=[1,2,3,4]
+>>> x
+[1, 2, 3, 4]
+>>> sinif listesi=[erdem,kerem,sebile,bilal]
+SyntaxError: invalid syntax
+>>> sinif_listesi=[erdem,kerem,sebile,bilal]
+Traceback (most recent call last):
+  File "<pyshell#101>", line 1, in <module>
+    sinif_listesi=[erdem,kerem,sebile,bilal]
+NameError: name 'erdem' is not defined
+>>> x=erdem
+Traceback (most recent call last):
+  File "<pyshell#102>", line 1, in <module>
+    x=erdem
+NameError: name 'erdem' is not defined
+>>> sinif_listesi=["erdem","kerem","sebile","bilal"]
+>>> sinif_listesi[0]
+'erdem'
+>>> sinif_listesi[0][3]
+'e'
+>>> sinif_listesi[0][6]
+Traceback (most recent call last):
+  File "<pyshell#106>", line 1, in <module>
+    sinif_listesi[0][6]
+IndexError: string index out of range
+>>> sinif_listesi[0][2]
+'d'
+>>> sinif_listesi
+['erdem', 'kerem', 'sebile', 'bilal']
+>>> sinif_listesi[0]+sinif_listesi[1]
+'erdemkerem'
+>>> sinif_listesi[0]*sinif_listesi[1]
+Traceback (most recent call last):
+  File "<pyshell#110>", line 1, in <module>
+    sinif_listesi[0]*sinif_listesi[1]
+TypeError: can't multiply sequence by non-int of type 'str'
+>>> sinif_listesi[0]+sinif[listesi1]
+Traceback (most recent call last):
+  File "<pyshell#111>", line 1, in <module>
+    sinif_listesi[0]+sinif[listesi1]
+NameError: name 'sinif' is not defined
+>>> sinif_listesi[0]+sinif_listesi[1]
+'erdemkerem'
+>>> print(_)
+erdemkerem
+>>> print(_[6])
+e
+>>> print(_[7])
+r
+>>> print(_[5])
+k
+>>> (sinif_listesi[0]+sinif_listesi[1])[5]
+'k'
+>>> urun_fiyatlari=[2.5,3,8]
+>>> urun_fiyatlari
+[2.5, 3, 8]
+>>> (urun_fiyatlari[0]+urun_fiyatlari[1]+urun_fiyatlari[2])/len(urun_fiyatlari)
+4.5
+>>> (2.5+3+8)/3
+4.5
+>>> urun_adetleri[2,3,5]
+Traceback (most recent call last):
+  File "<pyshell#122>", line 1, in <module>
+    urun_adetleri[2,3,5]
+NameError: name 'urun_adetleri' is not defined
+>>> urun_adetleri=[2,3,5]
+>>> urun_adetleri[0]*urun_fiyatlari[0]
+5.0
+>>> urun_adetleri+urun_fiyatlari
+[2, 3, 5, 2.5, 3, 8]
+>>> urun_adetleri=urun_adetleri+urun_fiyatlari
+>>> urun_adetleri
+[2, 3, 5, 2.5, 3, 8]
+>>> urun_adetleri+100
+Traceback (most recent call last):
+  File "<pyshell#128>", line 1, in <module>
+    urun_adetleri+100
+TypeError: can only concatenate list (not "int") to list
+>>> urun_adetleri.append(100)
+>>> urun_adetleri
+[2, 3, 5, 2.5, 3, 8, 100]
+>>> 7**2
+49
+>>> liste=["e","r","d","e","m"]
+>>> liste[1]
+'r'
+>>> liste[1:4]=["R","D","E"]
+>>> liste
+['e', 'R', 'D', 'E', 'm']
+>>> liste[1:4]=[]
+>>> liste
+['e', 'm']
+>>> liste[:]
+['e', 'm']
+>>> liste[:]=[]
+>>> liste
+[]
+>>> x="erdem"
+>>> y=[2,3,"kerem]
+   
+SyntaxError: EOL while scanning string literal
+>>> y=[2,3,"kerem"]
+>>> z=[9,15]
+>>> lol=[x,y,z]
+>>> lol
+['erdem', [2, 3, 'kerem'], [9, 15]]
+>>> len(lol)
+3
+>>> ll[0]
+Traceback (most recent call last):
+  File "<pyshell#148>", line 1, in <module>
+    ll[0]
+NameError: name 'll' is not defined
+>>> lol[0]
+'erdem'
+>>> lol[1]
+[2, 3, 'kerem']
+>>> lol[1][2]
+'kerem'
+>>> lol[1][2][2]
+'r'
+>>> len[1][2]
+Traceback (most recent call last):
+  File "<pyshell#153>", line 1, in <module>
+    len[1][2]
+TypeError: 'builtin_function_or_method' object is not subscriptable
+>>> len lol[1][2]
+SyntaxError: invalid syntax
+>>> len(lol[1][2])
+5
+>>> x.append(10)
+Traceback (most recent call last):
+  File "<pyshell#156>", line 1, in <module>
+    x.append(10)
+AttributeError: 'str' object has no attribute 'append'
+>>> x.append("nayin")
+Traceback (most recent call last):
+  File "<pyshell#157>", line 1, in <module>
+    x.append("nayin")
+AttributeError: 'str' object has no attribute 'append'
+>>> z.append(99)
+>>> lol
+['erdem', [2, 3, 'kerem'], [9, 15, 99]]
+>>> x=x+"nayin"
+>>> x
+'erdemnayin'
+>>> lol
+['erdem', [2, 3, 'kerem'], [9, 15, 99]]
+>>> print(x)
+erdemnayin
+>>> lol
+['erdem', [2, 3, 'kerem'], [9, 15, 99]]
+>>> y.append(55)
+>>> lol
+['erdem', [2, 3, 'kerem', 55], [9, 15, 99]]
+>>> x.append(10)
+Traceback (most recent call last):
+  File "<pyshell#167>", line 1, in <module>
+    x.append(10)
+AttributeError: 'str' object has no attribute 'append'
+>>> x
+'erdemnayin'
+>>> lol
+['erdem', [2, 3, 'kerem', 55], [9, 15, 99]]
+>>> x=["erdem"]
+>>> lol
+['erdem', [2, 3, 'kerem', 55], [9, 15, 99]]
+>>> x.appand(10)
+Traceback (most recent call last):
+  File "<pyshell#172>", line 1, in <module>
+    x.appand(10)
+AttributeError: 'list' object has no attribute 'appand'
+>>> x.append(10)
+>>> x
+['erdem', 10]
+>>> lol
+['erdem', [2, 3, 'kerem', 55], [9, 15, 99]]
+>>> x=input
+>>> 5
+5
+>>> x
+<built-in function input>
+>>> x=input()
+5
+>>> x
+'5'
+>>> x=input(bir sayi girin)
+SyntaxError: invalid syntax
+>>> x=input("bir sayi girin")
+bir sayi girin5
+>>> x
+'5'
+>>> x+10
+Traceback (most recent call last):
+  File "<pyshell#184>", line 1, in <module>
+    x+10
+TypeError: can only concatenate str (not "int") to str
+>>> x+"10"
+'510'
+>>> x=input("bir sayi girin")
+bir sayi girin5
+>>> x=int(input("bir sayi girin"))
+bir sayi girin5
+ü
+>>> x
+5
+>>> x+10
+15
+>>> if x<200:
+	print("kucuk")
+
+	
+kucuk
+>>> x=int(input(sayi giriniz))
+SyntaxError: invalid syntax
+>>> x=int(input("sayi giriniz"))
+sayi giriniz15
+>>> if x<200:
+	print("kucuk")
+elif x>400:
+	print("buyuk")
+else:
+	print("arada")
+
+kucuk
+>>> if x<200:
+	x=500
+	print("x'in yeni degeri "+str(x))
+
+	
+x'in yeni degeri 500
+>>> x
+500
+>>> 
